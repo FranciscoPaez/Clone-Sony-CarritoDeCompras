@@ -1,0 +1,404 @@
+/* Nav */
+.nav, 
+.navbar {
+    background-color: #000 !important;
+}
+
+.navbar-brand img {
+    width:8rem;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff !important;
+    opacity: .95;
+}
+
+.navbar-nav {
+    margin-left: 3rem;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.nav-link:hover {
+    color: #d8d9db !important;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+#viewCart {
+    width: 4%;
+    margin-left: 75rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+}
+/* End Nav */
+
+/* Banner */
+.banner {
+    background-image: url("./img/banner.png");
+    width: 100%;
+    height: 51.3vh;
+    background-repeat: no-repeat;
+}
+
+.card-banner {
+    background-color: rgba(0, 0, 0, .8);
+    margin-top: 10vh;
+    height: 240px;
+}
+
+.card-banner h2 {
+    margin: 1rem 1rem 0 1rem;
+    padding-top: 2rem;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.title-banner{
+    font-weight: 400;
+    font-size: 38px;
+    margin: 0 1rem 1rem 1rem;
+    color: #fff;
+    opacity: none !important;
+}
+
+.button-banner {
+    background: #2d75c7;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: .82rem;
+    padding: .6rem 1.5rem;
+    margin-left: 1rem;
+    border: 1px solid #91b3da;
+}
+
+.button-banner:hover{
+    background: #3865e0;
+}
+/* End Banner */
+
+/* Main */
+
+.card-card{
+    margin-top: 1rem;
+}
+
+.subtitle {
+    font-size: 22px;
+    text-transform: uppercase;
+    margin: 30px 0 30px 0;
+    color: #2f353d;
+    font-weight: 700;
+}
+
+.products {
+    font-size: 22px;
+    text-transform: uppercase;
+    margin: 50px 0 50px 0;
+    color: #2f353d;
+    font-weight: 700;
+    text-align: center;
+}
+   
+.card-subtitle{
+    width: 100%;
+    background-color: #000 !important;
+}
+
+.card-one{
+    background-color: rgba(0, 0, 0, .9);
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.card-one h3 {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.card-one h4 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+}
+/* End Main */
+
+
+/* Gifts */
+
+.gifts {
+    background: #a46900;
+    height: 220px;
+}
+
+.gifts h3 {
+    padding-top: 3rem;
+    padding-left: 1rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.gifts h4 {
+    color: #fff;
+    padding-left: 1rem;
+    font-size: 15px;
+    margin-top: .5rem;
+    font-weight: 400;
+}
+
+.card-gifts img{
+    margin-top: 1rem;
+    background-color: #f2f5f9;
+}
+
+.card-gifts h5{
+    color: #2f353d;
+    font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.card-gifts span{
+    color: #2f353d;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.card-gifts-right img{
+    background-color: #f2f5f9;
+    width: 280%;
+}
+
+.card-gifts-right  h5{
+    width: 300%;
+    color: #2f353d;
+    font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.card-gifts-right  span{
+    width: 300%;
+    color: #2f353d;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* End Gifts */
+
+
+.shop-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.card {
+    border: none;
+    max-width: 300px;
+    margin: auto;
+    font-family: arial;
+}
+
+.card > img {
+    width: 100%;
+    height: 250px;
+}
+
+.name{
+    color: #2f353d;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.price {
+    color: #f25529;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 1px;
+}
+
+.credit-debit {
+    color: #83838f;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.brand {
+    color: #83838f;
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 10px;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+/* Modal */
+.modal-container {
+    width: 80%;
+    margin: 0 10%;
+    max-height: 50vh;
+    color: #fff;
+    background-color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+}
+
+.modal-container::-webkit-scrollbar {
+    display: none;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #0a0909;
+    color: #ffffff;
+    width: 100%;
+}
+
+.modal-header-title {
+    justify-self: start;
+}
+
+.close {
+    cursor: pointer;
+    background: rgba(255, 0, 0, 0.473);
+    padding: 5px 10px 5px 10px;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.modal-container {
+    text-align: center;
+}
+
+.modal-container > div {
+    
+    align-items: center;
+}
+
+.modal-container > div > img {
+    height: 120px;
+    width: 120px;
+}
+
+.modal-content h3{
+    font-size: 20px;
+    color: #000;
+}
+
+.modal-content p {
+    color: #f25529;
+}
+
+.total-content {
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    background-color: #000;
+}
+
+/* End Modal */
+
+/* Footer */
+footer {
+    background: #000;
+    padding: 2.5rem;
+}
+
+.logo-footer img {
+    width: 7rem;
+}
+
+.title-footer {
+    color: #878792;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.title-footer:hover {
+    color: #fff;
+}
+
+.subtitle-footer {
+    color: #e4e7eb;
+    font-size: .8rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.subtitle-footer:hover {
+    color: #878792;
+}
+
+.line {
+    border-top: 1px solid #878792;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    opacity: .5;
+}
+
+.footer-text {
+    color: #e4e7eb;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.footer-text:hover {
+    color: #878792;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.footer-info{
+    font-size: 10px;
+    color: #878792;
+    margin-top: 38px;
+}
+/* End Footer */
+
+@media only screen and (max-width:830px) {
+    #viewCart{
+        width: 10%;
+        margin-left: 20rem;
+        padding-bottom: 1rem;    
+    }
+}
