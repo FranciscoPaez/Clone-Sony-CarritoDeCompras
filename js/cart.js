@@ -1,4 +1,4 @@
-const PaintCart = () => {  
+const paintCart = () => {  
     modalContainer.innerHTML = "";
     modalContainer.style.display = "flex";
     const modalHeader = document.createElement("div");
@@ -25,17 +25,32 @@ const PaintCart = () => {
            <img src="${product.img}">   
            <h3>${product.name}<h3/>
            <p>$${product.price}</p>
-           <p>Cantidad: ${product.quantity}</p>
+           <div class="row">
+               <div class="col-3"><span class="subtract"> - </span></div>
+               <div class="col-3"><p>${product.quantity}</p></div>
+               <div class="col-3"><span class="add"> + </span></div>
+           </div>          
         `;
         
         modalContainer.append(cartContent);
 
-        let remove = document.createElement("span");
-        remove.innerText = "x";
-        remove.className = "delete-product";
-        cartContent.append(remove);
+        
+        let substract = cartContent.querySelector(".subtract");
 
-        remove.addEventListener("click", removeProduct)
+        substract.addEventListener("click", () => {
+            if (product.quantity !== 1) {
+                product.quantity--;
+            }
+            paintCart();
+        });
+
+        let add = cartContent.querySelector(".add");
+
+        add.addEventListener("click", () => {
+            product.quantity++;
+            paintCart();
+        });
+
     });
 
     const total = cart.reduce((acc, el) => acc + el.price * el.quantity, 0);
@@ -46,18 +61,7 @@ const PaintCart = () => {
     modalContainer.append(totalBuying)
 };
 
-viewCart.addEventListener("click", PaintCart);
-
-const removeProduct = () => {
-    const foundId = cart.find((element) => element.id);
-
-    cart = cart.filter((cartId) => {
-        return cartId !== foundId;
-    });
-    
-    cartCounter();
-    PaintCart();
-};
+viewCart.addEventListener("click", paintCart);
 
 const cartCounter = () => {
     cartQuantity.innerText = cart.length;
